@@ -1,0 +1,24 @@
+{
+  "admitted_patients": [
+    { "name": "محمد أحمد", "room": "101", "cost": 250000 }
+  ],
+  "admitted_patients_total": 250000,
+
+  "surgeries": [
+    { "name": "عملية قلب", "doctor": "أحمد علي", "cost": 500000 }
+  ],
+  "surgeries_total": 500000,
+
+  "appointments_free": 30,
+  "appointments_paid": 20,
+  "appointments_total": 400000,
+
+  "calls_inbound": 300,
+  "calls_outbound": 150,
+
+  "emergency_patients": 15,
+  "emergency_total": 750000,
+
+  "radiology_total": 300000,
+  "lab_total": 150000
+}
