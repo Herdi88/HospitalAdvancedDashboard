@@ -1,74 +1,60 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <title>لوحة إدارة المستشفى</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="dashboard-header">
+        <img src="fmc_logo.png" alt="FMC Logo" class="logo">
+        <h1>لوحة إدارة المستشفى</h1>
+        <div id="current_datetime">التاريخ والوقت الحالي: --</div>
+    </header>
+
     <div class="dashboard-container">
-        <header>
-            <h1>لوحة إدارة المستشفى</h1>
-            <p id="current_datetime">التاريخ والوقت الحالي: ---</p>
-        </header>
 
         <div class="card">
-            <h2>المرضى الراقدين</h2>
-            <div id="inpatients">لا يوجد بيانات</div>
-            <p>الإجمالي: <span id="inpatients_total">IQD 0</span></p>
+            <h3>المرضى الراقدين</h3>
+            <div id="admitted_patients_list">--</div>
+            <p>الإجمالي: <span id="admitted_patients_total">IQD 0</span></p>
         </div>
 
         <div class="card">
-            <h2>العمليات الجراحية</h2>
-            <div id="surgeries">لا يوجد بيانات</div>
+            <h3>العمليات الجراحية</h3>
+            <div id="surgeries_list">--</div>
             <p>الإجمالي: <span id="surgeries_total">IQD 0</span></p>
         </div>
 
         <div class="card">
-            <h2>المواعيد</h2>
-            <p>متابعة مجانية: <span id="free_appointments">0</span></p>
-            <p>استشارة أولية: <span id="paid_appointments">0</span></p>
+            <h3>المواعيد</h3>
+            <p>متابعة مجانية: <span id="appointments_free">--</span></p>
+            <p>استشارة أولية: <span id="appointments_paid">--</span></p>
             <p>الإجمالي: <span id="appointments_total">IQD 0</span></p>
         </div>
 
         <div class="card">
-            <h2>المكالمات</h2>
-            <p>الواردة: <span id="inbound_calls">0</span></p>
-            <p>الصادرة: <span id="outbound_calls">0</span></p>
+            <h3>المكالمات</h3>
+            <p>الواردة: <span id="calls_inbound">--</span></p>
+            <p>الصادرة: <span id="calls_outbound">--</span></p>
         </div>
 
         <div class="card">
-            <h2>الطوارئ</h2>
-            <p>عدد المرضى: <span id="emergency_patients">0</span></p>
+            <h3>الطوارئ</h3>
+            <p>عدد المرضى: <span id="emergency_patients">--</span></p>
             <p>الإجمالي: <span id="emergency_total">IQD 0</span></p>
         </div>
 
         <div class="card">
-            <h2>الأشعة</h2>
+            <h3>الأشعة</h3>
             <p>الإجمالي: <span id="radiology_total">IQD 0</span></p>
         </div>
 
         <div class="card">
-            <h2>المختبر</h2>
+            <h3>المختبر</h3>
             <p>الإجمالي: <span id="lab_total">IQD 0</span></p>
         </div>
-
-        <div class="card">
-            <h2>الإجراءات</h2>
-            <p>الإجمالي: <span id="procedures_total">IQD 0</span></p>
-        </div>
-
-        <div class="card">
-            <h2>إحصاءات الأداء</h2>
-            <p>متوسط تكلفة المريض: <span id="avg_patient_cost">IQD 0</span></p>
-            <p>الأطباء الأكثر نشاطاً: <span id="top_doctor">---</span></p>
-            <p>الجراح الأكثر تكراراً: <span id="top_surgeon">---</span></p>
-        </div>
     </div>
-
-    <script src="app.js"></script>
 </body>
-
+<script src="app.js"></script>
 </html>
