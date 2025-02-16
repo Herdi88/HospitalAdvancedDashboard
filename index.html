@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة تحكم المستشفى - الأداء والتكاليف</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <h1>لوحة إدارة المستشفى</h1>
+        <p id="current_time"></p>
+
+        <!-- Admitted Patients -->
+        <section>
+            <h2>المرضى الراقدين</h2>
+            <ul id="admitted_patients_list"></ul>
+            <p>الإجمالي: <span id="total_admitted_cost">0</span> IQD</p>
+        </section>
+
+        <!-- Surgeries -->
+        <section>
+            <h2>العمليات الجراحية</h2>
+            <ul id="surgeries_list"></ul>
+            <p>الإجمالي: <span id="total_surgeries_cost">0</span> IQD</p>
+        </section>
+
+        <!-- Appointments -->
+        <section>
+            <h2>المواعيد</h2>
+            <p>متابعة مجانية: <span id="followup_count">0</span></p>
+            <p>استشارة أولية: <span id="initial_count">0</span></p>
+            <p>الإجمالي: <span id="total_appointments_cost">0</span> IQD</p>
+        </section>
+
+        <!-- Calls -->
+        <section>
+            <h2>المكالمات</h2>
+            <p>الواردة: <span id="inbound_calls">0</span></p>
+            <p>الصادرة: <span id="outbound_calls">0</span></p>
+        </section>
+
+        <!-- Emergency -->
+        <section>
+            <h2>الطوارئ</h2>
+            <p>عدد المرضى: <span id="emergency_count">0</span></p>
+            <p>الإجمالي: <span id="emergency_cost">0</span> IQD</p>
+        </section>
+
+        <!-- Radiology -->
+        <section>
+            <h2>الأشعة</h2>
+            <p>الإجمالي: <span id="radiology_cost">0</span> IQD</p>
+        </section>
+
+        <!-- Lab -->
+        <section>
+            <h2>التحاليل</h2>
+            <p>الإجمالي: <span id="lab_cost">0</span> IQD</p>
+        </section>
+
+        <!-- Procedures -->
+        <section>
+            <h2>الإجراءات</h2>
+            <p>الإجمالي: <span id="procedures_cost">0</span> IQD</p>
+        </section>
+
+        <!-- Analytics -->
+        <section>
+            <h2>تحليلات الأداء</h2>
+            <p>معدل تكلفة المريض: <span id="avg_patient_cost">0</span> IQD</p>
+            <p>أكثر الجراحين تكرارًا: <span id="top_surgeon">-</span></p>
+            <p>ملخص الأداء: <span id="performance_summary">-</span></p>
+        </section>
+
+        <button id="refresh_data">تحديث البيانات</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
