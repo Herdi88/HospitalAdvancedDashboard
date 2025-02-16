@@ -1,36 +1,37 @@
 body {
-    font-family: 'Cairo', sans-serif;
-    background-color: #f3f4f6;
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f0f4f8;
     margin: 0;
     padding: 0;
-    text-align: right;
     direction: rtl;
+    text-align: right;
+    color: #333;
 }
 
 .dashboard-container {
-    width: 90%;
-    margin: 10px auto;
-    background: #ffffff;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    color: #2c3e50;
-}
-
-section {
-    background: #f9f9f9;
+    max-width: 900px;
+    margin: 20px auto;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-button {
-    background-color: #3498db;
+header {
+    background-color: #007bff;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card {
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-right: 4px solid #007bff;
+}
+
+.card h2 {
+    color: #007bff;
+    margin-top: 0;
 }
