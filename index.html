@@ -3,78 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>لوحة تحكم المستشفى - الأداء والتكاليف</title>
+    <title>لوحة إدارة المستشفى</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="dashboard-container">
-        <h1>لوحة إدارة المستشفى</h1>
-        <p id="current_time"></p>
+        <header>
+            <h1>لوحة إدارة المستشفى</h1>
+            <p id="current_datetime">التاريخ والوقت الحالي: ---</p>
+        </header>
 
-        <!-- Admitted Patients -->
-        <section>
+        <div class="card">
             <h2>المرضى الراقدين</h2>
-            <ul id="admitted_patients_list"></ul>
-            <p>الإجمالي: <span id="total_admitted_cost">0</span> IQD</p>
-        </section>
+            <div id="inpatients">لا يوجد بيانات</div>
+            <p>الإجمالي: <span id="inpatients_total">IQD 0</span></p>
+        </div>
 
-        <!-- Surgeries -->
-        <section>
+        <div class="card">
             <h2>العمليات الجراحية</h2>
-            <ul id="surgeries_list"></ul>
-            <p>الإجمالي: <span id="total_surgeries_cost">0</span> IQD</p>
-        </section>
+            <div id="surgeries">لا يوجد بيانات</div>
+            <p>الإجمالي: <span id="surgeries_total">IQD 0</span></p>
+        </div>
 
-        <!-- Appointments -->
-        <section>
+        <div class="card">
             <h2>المواعيد</h2>
-            <p>متابعة مجانية: <span id="followup_count">0</span></p>
-            <p>استشارة أولية: <span id="initial_count">0</span></p>
-            <p>الإجمالي: <span id="total_appointments_cost">0</span> IQD</p>
-        </section>
+            <p>متابعة مجانية: <span id="free_appointments">0</span></p>
+            <p>استشارة أولية: <span id="paid_appointments">0</span></p>
+            <p>الإجمالي: <span id="appointments_total">IQD 0</span></p>
+        </div>
 
-        <!-- Calls -->
-        <section>
+        <div class="card">
             <h2>المكالمات</h2>
             <p>الواردة: <span id="inbound_calls">0</span></p>
             <p>الصادرة: <span id="outbound_calls">0</span></p>
-        </section>
+        </div>
 
-        <!-- Emergency -->
-        <section>
+        <div class="card">
             <h2>الطوارئ</h2>
-            <p>عدد المرضى: <span id="emergency_count">0</span></p>
-            <p>الإجمالي: <span id="emergency_cost">0</span> IQD</p>
-        </section>
+            <p>عدد المرضى: <span id="emergency_patients">0</span></p>
+            <p>الإجمالي: <span id="emergency_total">IQD 0</span></p>
+        </div>
 
-        <!-- Radiology -->
-        <section>
+        <div class="card">
             <h2>الأشعة</h2>
-            <p>الإجمالي: <span id="radiology_cost">0</span> IQD</p>
-        </section>
+            <p>الإجمالي: <span id="radiology_total">IQD 0</span></p>
+        </div>
 
-        <!-- Lab -->
-        <section>
-            <h2>التحاليل</h2>
-            <p>الإجمالي: <span id="lab_cost">0</span> IQD</p>
-        </section>
+        <div class="card">
+            <h2>المختبر</h2>
+            <p>الإجمالي: <span id="lab_total">IQD 0</span></p>
+        </div>
 
-        <!-- Procedures -->
-        <section>
+        <div class="card">
             <h2>الإجراءات</h2>
-            <p>الإجمالي: <span id="procedures_cost">0</span> IQD</p>
-        </section>
+            <p>الإجمالي: <span id="procedures_total">IQD 0</span></p>
+        </div>
 
-        <!-- Analytics -->
-        <section>
-            <h2>تحليلات الأداء</h2>
-            <p>معدل تكلفة المريض: <span id="avg_patient_cost">0</span> IQD</p>
-            <p>أكثر الجراحين تكرارًا: <span id="top_surgeon">-</span></p>
-            <p>ملخص الأداء: <span id="performance_summary">-</span></p>
-        </section>
-
-        <button id="refresh_data">تحديث البيانات</button>
+        <div class="card">
+            <h2>إحصاءات الأداء</h2>
+            <p>متوسط تكلفة المريض: <span id="avg_patient_cost">IQD 0</span></p>
+            <p>الأطباء الأكثر نشاطاً: <span id="top_doctor">---</span></p>
+            <p>الجراح الأكثر تكراراً: <span id="top_surgeon">---</span></p>
+        </div>
     </div>
 
     <script src="app.js"></script>
